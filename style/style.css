@@ -7,7 +7,7 @@ body {
 #fullscreen {
     height: 98.8vh;
     /* width: 100vw; */
-    border: 5px solid red;
+    border: 0px solid white;
     position: relative;
     text-align: center;
     
@@ -44,10 +44,12 @@ body {
     color: black;
     margin-bottom: 0rem;
     align-content: center;
+    font-family: 'Quicksand', sans-serif;
 } 
 
 .section-container {
-	border: 5px solid black;
+    border: 0px solid white;
+    height: 630px;
 	position: relative;
 	background-color: white;
     padding: 50px;	
@@ -57,9 +59,9 @@ body {
 }
 
 .section {
-	border: 2px solid white;
+	border: 0px ;
     width: 250px;
-    height: 500px;
+    height: 600px;
 	padding: 10px;
     display:flex;
     flex-direction: column;
@@ -67,77 +69,110 @@ body {
 }
 
 .sectionitem1 , .sectionitem2, .sectionitem3, .sectionitem4 {
-    border: 2px solid lightgrey;
-    background-color: lightgrey;
-	font-size: 36px;
-	font-weight: bolder;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+   	font-weight: bolder;
 	margin-right: 10px;
     margin-left: 10px;	
     justify-content: center;
 }
 
+/* Font links and hover etc here: */
+a {
+    color: darkgray;
+    text-decoration: none;
+    text-transform: uppercase; 
+    justify-content: center; 
+    padding-right: 18px; 
+}
+ a:hover {
+    text-decoration: underline; 
+    color: salmon;
+ }
 
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-    /* #profile p{font-size:1.5em;}
-    #profile .title{font-size: 3em}
-    #profile .name{width: 400px;}
-    #profile img{width: 60%; margin: 0 23%;} */
-    
+ a:active {
+    color: black;
+  }
+  
+  a:visited {
+    color: purple;
+  }
+
+
+
+   
+    /* font-awesome styling */
           	
     }
     .fa:hover {
         opacity: 0.7;
       }
+    .fa-user-secret, .fa-paint-brush, .fa-trophy-alt, .fa-typewriter, .fa-chevron-double-up, .fa-chevron-double-down, .fa-phone, .fa-envelope-square, .fa-map-pin {
+        color: salmon;
+    }
 
       .grid-container {
-        border: 5px solid brown;
+        border: 0px solid black;
+        background-color: whitesmoke;
         display: flex;
         justify-content: center;	
     }
     
     .gridmiddle {
         padding: 100px;
-        border: 5px solid cyan;
+        border: 0px solid white;
+        height: 450px;
         width: 900px; 
         display: flex;    
         flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center; /* justify-content : center wil always align the contents along the vertical axis if direction is column*/
-        align-items: center;
-    /* 	 its the opposite if we are using direction as row */
+        flex-direction: column;
+        font-family: 'Quicksand', sans-serif;
+        justify-content: flex-start;
+    
     
     }
 
     .gridend {
-        padding: 100px;
-        border: 5px solid cyan;
+        padding: 30px;
+        height: 10px;
         width: 900px; 
+        background-color: white;
         display: flex;    
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center; /* justify-content : center wil always align the contents along the vertical axis if direction is column*/
+        justify-content: center; 
         align-items: center;
-    /* 	 its the opposite if we are using direction as row */
+    
     
     }
     
-    .gridsocial {
-        margin: 20px;	
-    }
+    /* .gridcontact {
+        background-color: white;
+        margin: 5px;	
+    }  */
     
+
+
+    @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+        /* #profile p{font-size:1.5em;}
+        #profile .title{font-size: 3em}
+        #profile .name{width: 400px;}
+        #profile img{width: 60%; margin: 0 23%;} */
 
   @media only screen and (min-width: 768px) {
     /* For desktop: */
