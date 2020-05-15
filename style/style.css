@@ -1,8 +1,13 @@
-/* Menu for site */
+/* MENU code
+1. Position = fixed to move up and hide gap
+2. z-index */
+
+
+/* Menu for site> no gap = fixed  */
 #menuToggle
 {
   display: block;
-  position: relative;
+  position: fixed;
   top: 50px;
   left: 50px;
   
@@ -53,7 +58,7 @@
   position: relative;
   
   background:black;
-  border-radius: 20px;
+  border-radius: 2px;
   
   z-index: 1;
   
@@ -144,16 +149,16 @@ body {
 /* Big pictures */
 .homepic {
     background-image: url(/imgs/3.jpg);
-    min-height: 190px;   
-    background-size: contain;
-    background-position: center;
+    min-height: 20px;   
+    background-size: cover;
+    background-position: 25% 50%;
     background-repeat: no-repeat
 }
 
 .aboutpic {
     background-image: url(/imgs/laptop.jpg);
     min-height: 190px;   
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat
 }
@@ -161,15 +166,23 @@ body {
 .careerpic {
     background-image: url(/imgs/career.jpg);
     min-height: 190px;   
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat
 }
 
 .portfoliopic {
-    background-image: url(/imgs/career.jpg);
+    background-image: url(/imgs/4.jpg);
     min-height: 190px;   
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.blogpic {
+    background-image: url(/imgs/blog1.jpg);
+    min-height: 190px;   
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat
 }
@@ -273,7 +286,7 @@ border-bottom-right-radius: 500px;
 .apgsection {
 	border: 0px;
     width: 250px;
-    height: 480px;
+    height: 500px;
 	padding: 10px;
     display:flex;
     flex-direction: column;
@@ -330,7 +343,7 @@ a {
       }
     .fa-user-secret, .fa-paint-brush, .fa-trophy-alt, .fa-typewriter, .fa-chevron-double-up, 
     .fa-chevron-double-down, .fa-phone, .fa-envelope-square, .fa-map-pin,
-    .fa-facebook,.fa-twitter, .fa-linkedin ,.fa-instagram {
+    .fa-facebook,.fa-twitter, .fa-linkedin ,.fa-instagram, .fa-github {
         color: salmon;
     }
 
@@ -375,6 +388,37 @@ border-bottom-left-radius: 250px;
         flex-direction: row;
         justify-content: center; 
         align-items: center;
+    
+    
+    }
+
+    .about-grid-container {
+        border: 0px solid black;
+        background-color: whitesmoke;
+        -webkit-border-top-right-radius: 500px;
+-webkit-border-bottom-right-radius: 500px;
+-webkit-border-bottom-left-radius: 200px;
+-moz-border-radius-topright: 500px;
+-moz-border-radius-bottomright: 500px;
+-moz-border-radius-bottomleft: 350px;
+border-top-right-radius: 500px;
+border-bottom-right-radius: 500px;
+border-bottom-left-radius: 250px;
+        display: flex;
+        justify-content: center;	
+        
+    }
+    
+    .aboutgridmiddle {
+        padding: 65px ;
+        border: 1px solid black;
+        height: 345px;
+        width: 250px; 
+        display: flex;    
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-family: 'Quicksand', sans-serif;
+        justify-content: flex-start;
     
     
     }
