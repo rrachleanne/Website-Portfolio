@@ -1,8 +1,6 @@
 /* MENU code
 1. Position = fixed to move up and hide gap
 2. z-index */
-
-
 /* Menu for site> no gap = fixed  */
 #menuToggle
 {
@@ -34,7 +32,7 @@
 #menuToggle input
 {
   display: block;
-  width: 40px;
+  width: 220px;
   height: 32px;
   position: absolute;
   top: -7px;
@@ -106,7 +104,7 @@
   position: absolute;
   width: 100px;
   margin: -100px 0 0 -50px;
-  padding: 50px;
+  padding: 80px;
   padding-top: 125px;
   
   background:whitesmoke;
@@ -121,7 +119,7 @@
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 5px 0;
   font-size: 22px;
 }
 
@@ -146,7 +144,7 @@ body {
     text-align: center;
     
 }
-/* Big pictures */
+/* All main HTML Pages > Big pictures */
 .homepic {
     background-image: url(/imgs/3.jpg);
     /* min-height: 20px;    */
@@ -177,13 +175,23 @@ body {
     background-repeat: no-repeat
 }
 
-.portfoliopic {
+.photographypic {
     background-image: url(/imgs/4.jpg);
     /* min-height: 190px;    */
     opacity: 0.4;
     background-size: cover;
     background-position: center;
     background-position: 52% 50%;
+    background-repeat: no-repeat
+}
+
+.portfoliopic {
+    background-image: url(/imgs/magic.jpg);
+    /* min-height: 190px;    */
+    opacity: 0.4;
+    background-size: cover;
+    background-position: center;
+    background-position: 55% 50%;
     background-repeat: no-repeat
 }
 
@@ -197,6 +205,7 @@ body {
     background-repeat: no-repeat
 }
 
+/* All main HTML H1, H2 and H3 Headings */
 
 .maincontent h1 {
     font-size: 55px;
@@ -207,9 +216,6 @@ body {
     align-content: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: 900; 
-    
-    
-    
 } 
 
 .maincontent h2 {
@@ -229,7 +235,7 @@ body {
     font-family: 'Quicksand', sans-serif;
 } 
 
-/* Main picture sections */
+/* All HTML Main picture Container Sections */
 .maincontainer {
     /* display: table; */
     position: relative;
@@ -250,30 +256,119 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* All HTML Footer container css */
+
+      .grid-container {
+        border: 0px solid black;
+        background-color: white;
+        justify-items: center;
+        -webkit-border-top-right-radius: 500px;
+        -webkit-border-bottom-right-radius: 500px;
+        -webkit-border-bottom-left-radius: 200px;
+        -moz-border-radius-topright: 500px;
+        -moz-border-radius-bottomright: 500px;
+        -moz-border-radius-bottomleft: 350px;
+        border-top-right-radius: 500px;
+        border-bottom-right-radius: 500px;
+        border-bottom-left-radius: 250px;
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    
+    .gridmiddle {
+        padding: 100px;
+        border: 0px solid white;
+        height: 345px;
+        width: 250px; 
+        display: flex;    
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-family: 'Quicksand', sans-serif;
+        justify-content: flex-start;
+    
+    
+    }
+
+    .gridend {
+        /* padding: ; */
+        padding: 80px;
+        height: 130px;
+        width: 315px; 
+        background-color: white;
+        display: flex;    
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly; 
+        align-items: center;
+    }
+
+    /* All HTML Links for hover */
+a {
+    color: darkgray;
+    text-decoration: none;
+    text-transform: uppercase; 
+    justify-content: center; 
+ 
+}
+ a:hover {
+    text-decoration: underline; 
+    color: salmon;
+ }
+
+ a:active {
+    color: salmon;
+  }
+  
+  a:visited {
+    color: salmon;
+  }
+
+
+    /* All HTMLfont-awesome styling */
+          	
+    }
+    .fa:hover {
+        opacity: 0.7;
+      }
+    .fa-user-secret, .fa-code, .fa-trophy-alt, .fa-typewriter, .fa-chevron-double-up, 
+    .fa-chevron-double-down, .fa-phone, .fa-envelope-square, .fa-map-pin,
+    .fa-facebook,.fa-twitter, .fa-linkedin ,.fa-instagram, .fa-github, .fa-camera {
+        color: salmon;
+    }
+
+   .fa-chevron-double-up, .fa-chevron-double-down {
+        color: black;
+    }
+
+/* 1. Home page ONLY specific CSS */
     .homecontent {
         background-color: white;
         width: 150;
+       
     }
     
     header {
-        margin: auto;
+        margin: 0px;
         padding-top: auto;
+        padding-bottom: 20px;
         text-align: center;
-        min-height: 50px;
+        min-height: 20px;
         min-width: 100px;
-        background-color: whitesmoke;
-        font-size: 20px;
-        color: white;
+        background-color: white;
+      
     }
     
     section {
-        margin: auto;
-        padding-top: 40px;
+        margin: 10px;
+        padding-top: 30px;
         text-align: center;
-        min-height: 100px;
-        min-width: 100px;
+        /* min-height: auto; */
+        /* min-width: auto; */
         background-color: whitesmoke;
-        font-size: 40px;
+        font-size:28px;
         font-family: 'Quicksand', sans-serif;
         color: white;
         padding-bottom: 10px;
@@ -281,16 +376,19 @@ body {
     
     footer {
         margin: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 0px;
         text-align: center;
-        min-height: 90px;
-        min-width: 100px;
+        /* min-height: 90px;
+        min-width: 100px; */
         background-color: white;
-        font-size: 20px;
+        font-size: 15px;
         color: white;
     }
   
+
+/* 1. About page ONLY specific CSS */
+
     #title {
         margin: auto;
         padding-top: 40px;
@@ -333,166 +431,6 @@ body {
     }
 
 
-.hpgsectionitem1 , .hpgsectionitem2, .hpgsectionitem3, .hpgsectionitem4 {
-    padding-top: 20px;
-    border: 2px solid whitesmoke;
-    background-color: whitesmoke;
-    -webkit-border-top-left-radius: 500px;
-    -webkit-border-bottom-right-radius: 500px;
-    -moz-border-radius-topleft: 500px;
-    -moz-border-radius-bottomright: 500px;
-    border-top-left-radius: 500px;
-    border-bottom-right-radius: 500px;
-    font-size: 36px;
-    font-family: 'Quicksand', sans-serif;
-   	font-weight: bolder;
-	margin-right: 10px;
-    margin-left: 10px;	
-    justify-content: center;
-}
-
-
-/* About Page Sections */
-.apgsection-container {
-    background-color: white ;
-    border: 0px solid white;
-    height: 650px;
-	position: relative;
-	padding: 50px;	
-    flex-direction: column;
-	display: flex;
-	justify-content: center;
-}
-
-.apgsection {
-	border: 0px;
-    width: 250px;
-    height: 500px;
-	padding: 10px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;	
-    font-family: 'Quicksand', sans-serif;
-}
-
-.apgsectionitem1 , .apgsectionitem2, .apgsectionitem3, .apgsectionitem4 {
-    border: 2px solid whitesmoke;
-    background-color: whitesmoke;
-    -webkit-border-top-left-radius: 500px;
-    -webkit-border-bottom-right-radius: 500px;
-    -moz-border-radius-topleft: 500px;
-    -moz-border-radius-bottomright: 500px;
-    border-top-left-radius: 500px;
-    border-bottom-right-radius: 500px;
-    font-size: 36px;
-    font-family: 'Quicksand', sans-serif;
-   	font-weight: bolder;
-	margin-right: 10px;
-    margin-left: 10px;	
-    justify-content: center;
-}
-
-/* Font links and hover etc here: */
-a {
-    color: darkgray;
-    text-decoration: none;
-    text-transform: uppercase; 
-    justify-content: center; 
-    padding-right: 18px; 
-}
- a:hover {
-    text-decoration: underline; 
-    color: salmon;
- }
-
- a:active {
-    color: black;
-  }
-  
-  a:visited {
-    color: purple;
-  }
-
-
-
-   
-    /* font-awesome styling */
-          	
-    }
-    .fa:hover {
-        opacity: 0.7;
-      }
-    .fa-user-secret, .fa-paint-brush, .fa-trophy-alt, .fa-typewriter, .fa-chevron-double-up, 
-    .fa-chevron-double-down, .fa-phone, .fa-envelope-square, .fa-map-pin,
-    .fa-facebook,.fa-twitter, .fa-linkedin ,.fa-instagram, .fa-github {
-        color: salmon;
-    }
-
-   .fa-chevron-double-up, .fa-chevron-double-down {
-        color: black;
-    }
-
-      .grid-container {
-        border: 0px solid black;
-        background-color: white;
-        -webkit-border-top-right-radius: 500px;
--webkit-border-bottom-right-radius: 500px;
--webkit-border-bottom-left-radius: 200px;
--moz-border-radius-topright: 500px;
--moz-border-radius-bottomright: 500px;
--moz-border-radius-bottomleft: 350px;
-border-top-right-radius: 500px;
-border-bottom-right-radius: 500px;
-border-bottom-left-radius: 250px;
-        display: flex;
-        justify-content: center;	
-        
-    }
-    
-    .gridmiddle {
-        padding: 100px;
-        border: 0px solid white;
-        height: 345px;
-        width: 250px; 
-        display: flex;    
-        flex-wrap: wrap;
-        flex-direction: column;
-        font-family: 'Quicksand', sans-serif;
-        justify-content: flex-start;
-    
-    
-    }
-
-    .gridend {
-        padding: 30px;
-        height: 130px;
-        width: 315px; 
-        background-color: white;
-        display: flex;    
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center; 
-        align-items: center;
-    
-    
-    }
-/* 
-    .about-grid-container {
-        border: 0px solid black;
-        background-color: whitesmoke;
-        -webkit-border-top-right-radius: 500px;
--webkit-border-bottom-right-radius: 500px;
--webkit-border-bottom-left-radius: 200px;
--moz-border-radius-topright: 500px;
--moz-border-radius-bottomright: 500px;
--moz-border-radius-bottomleft: 350px;
-border-top-right-radius: 500px;
-border-bottom-right-radius: 500px;
-border-bottom-left-radius: 250px;
-        display: flex;
-        justify-content: center;	
-        
-    } */
     
     .aboutgridmiddle {
         padding: 65px ;
@@ -513,7 +451,25 @@ border-bottom-left-radius: 250px;
         margin: 5px;	
     }  */
     
+/* Portfolio section - Photo grid  */
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
 
     @media only screen and (min-width: 600px) {
         /* For tablets: */
