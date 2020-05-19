@@ -377,7 +377,7 @@ a {
     }
   
 
-/* 1. All HTML pages specific CSS */
+/* 1. All HTML pages specific CSS except Blog */
 
     #title {
         margin: auto;
@@ -405,7 +405,7 @@ a {
         padding-bottom: 10px;
     }
 
-    #generalinfo, #past, #present, #future, #content {
+     #content {
         margin: auto;
         padding-top: 10px;
         text-align: left;
@@ -457,6 +457,62 @@ a {
     vertical-align: middle;
   }
   
+/* Blog section */
+
+#blogtitle {
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+    min-height: 20px;
+    min-width: 100px;
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    padding-bottom: 10px;
+}
+
+#blogheading1{
+    margin: auto;
+    padding-top: 40px;
+    text-align: left;
+    min-height: 50px;
+    min-width: 100px;
+    background-color: whitesmoke;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    color: salmon;
+    padding-bottom: 10px;
+}
+#blogheading2{
+    margin: auto;
+    padding-top: 5px;
+    text-align: left;
+    min-height: 50px;
+    min-width: 100px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: green;
+    padding-bottom: 10px;
+}
+
+#blogcontent {
+    margin: auto;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: 39px;
+    margin-right: 39px;
+    min-height: 100px;
+    min-width: 100px;
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    padding-bottom: 10px;
+}
+
+
 
     @media only screen and (min-width: 600px) {
         /* For tablets: */
@@ -503,4 +559,3 @@ a {
         background-position: center center;
         background-repeat: no-repeat
     } 
-
