@@ -260,7 +260,7 @@ body {
 /* All HTML Footer container css */
 
       .grid-container {
-        border: 0px solid black;
+        border-top: 0px solid black;
         background-color: white;
         justify-items: center;
         display: flex;
@@ -288,7 +288,8 @@ body {
         padding: 80px;
         height: 130px;
         width: 315px; 
-        background-color: white;
+        border-top: 1px solid black;
+        background-color: pink;
         display: flex;    
         flex-wrap: wrap;
         flex-direction: row;
@@ -334,21 +335,20 @@ a {
     }
 
 /* 1. Home page ONLY specific CSS */
-  
+  /* Main content */
        
-        ;
         #body {
             display: block;
             width: 100%;
             height:100%;
-            background-color:grey;
+            background-color:whitesmoke;
         }
         #container {
             min-height: 100%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            background-color: black;
+            background-color: whitesmoke;
         }
         .box {
             display:flex;
@@ -364,6 +364,124 @@ a {
         #three {background-color: whitesmoke;}
         #four {background-color: whitesmoke;}
         #five {background-color: whitesmoke;}
+        #footer {background-color: white;}
+
+    /* Contact Section */
+
+    #contactbody {
+        display: block;
+        width: 100%;
+        height:100%;
+        background-color:whitesmoke;
+    }
+    #contactcontainer {
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: whitesmoke;
+    }
+    .contactbox {
+        display:flex;
+        border: 3.5px solid white;
+        flex-basis: 100%;
+        height: 28.5vh;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+         font-family: 'Quicksand', sans-serif;
+         font-size: 25px;
+         color: salmon;
+    }
+    #phone, #email, #location {background-color: white;}
+    
+    /* 2. All HTML Page Footer */
+    #footerbody {
+        display: block;
+        width: 100%;
+        height:100%;
+        background-color:whitesmoke;
+    }
+    #footercontainer {
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: whitesmoke;
+    }
+    .footerbox {
+        display:flex;
+        border: 3.5px solid white;
+        flex-basis: 100%;
+        height: 5vh;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+         font-family: 'Quicksand', sans-serif;
+         
+    }
+   
+    #footer {background-color: white;}
+    #social {background-color: white; border-top: 1px solid whitesmoke;}
+
+    /* 3. About page CSS */
+
+       
+    #aboutmain {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: "left right";
+        /* padding: 25% 10% 0%; */
+        padding-top: 26%;
+        padding-bottom: 0%;
+        padding-right: 10%;
+        padding-left: 10%;
+      }
+      
+      #abouttext {
+        grid-area: left;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        font-family: 'Quicksand', sans-serif;
+        
+        background-color: whitesmoke;
+      }
+      
+          
+      #aboutphoto {
+        grid-area: right;
+        display: none;
+        padding: 0px;
+        background-color: whitesmoke;
+      }
+      
+      
+      #aboutphoto img {
+        width: 100%;
+        height: auto;
+      }
+  
+      #paragraphmain {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: "left right";
+        /* padding: 25% 10% 0%; */
+        padding-top: 16%;
+        padding-bottom: 10%;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      #aboutparagraph {
+          grid-area: auto;
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 0px;
+          
+          font-family: 'Quicksand', sans-serif;
+          font-size: 18px;
+          text-align: left;
+        }
 
 /* 1. All HTML pages specific CSS except Blog */
 
@@ -409,20 +527,6 @@ a {
     }
 
 
-    
-    .aboutgridmiddle {
-        padding: 65px ;
-        border: 1px solid black;
-        height: 345px;
-        width: 250px; 
-        display: flex;    
-        flex-wrap: wrap;
-        flex-direction: column;
-        font-family: 'Quicksand', sans-serif;
-        justify-content: flex-start;
-    
-    
-    }
     
    
     
@@ -536,6 +640,8 @@ a {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
     
+
+    /* home Page */
     .box {
         display:flex;
         flex-basis: 49.5%;
@@ -545,8 +651,63 @@ a {
         align-items: center;
         font-size: 45px;
     }
-  
-  
+ 
 
-    } 
-    
+    /* About section */
+
+    .aboutcontent {
+        font-size: 1.6em;
+      }
+      
+      #aboutmain {
+        padding-top: 5%;
+        padding-bottom: 0%;
+        padding-right: 10%;
+        padding-left: 10%;
+      }
+      
+      #aboutphoto {
+        display: block;
+      }
+      #abouttext {
+        text-align: left;
+      }
+     
+     
+      .aboutcontent h2 {
+        width: 100%;
+        font-size: 60px;
+        color:salmon;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .aboutcontent {
+        width: 100%;
+        font-size: 25px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: ;
+      }
+      #paragraphmain {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: "left right";
+        /* padding: 25% 10% 0%; */
+        padding-top: 5%;
+        padding-bottom: 0%;
+        padding-right: 10%;
+        padding-left: 10%;
+      }
+
+      #aboutparagraph {
+        grid-area: auto;
+        display: flex;
+        flex-direction: column;
+        
+        font-family: 'Quicksand', sans-serif;
+        font-size: 18px;
+      }
+   
+    }
+      
+
+     
+   
