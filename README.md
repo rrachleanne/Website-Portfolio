@@ -42,11 +42,15 @@ Girl Qode is a portfolio website designed to showcase my personality, hobbies, c
 
 #### Screenshots
 
-1. Mock-ups
-2. Live Website Outcome - Desktop
-3. Live Website Outcome - iphone
 
 
+1. Live Website Outcome - Desktop
+
+   ![](https://github.com/rrachleanne/Website-Portfolio/blob/master/docs/allscreensdesktop.jpg?raw=true)
+
+2. Live Website Outcome - iphone
+
+![](https://github.com/rrachleanne/Website-Portfolio/blob/master/docs/allscreensmobile.jpg?raw=true)
 
 #### Target Audience
 
