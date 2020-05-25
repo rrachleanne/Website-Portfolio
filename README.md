@@ -14,6 +14,10 @@ Github Rep - https://github.com/rrachleanne/Website-Portfolio
 
 ------
 
+![](https://github.com/rrachleanne/Website-Portfolio/blob/master/docs/computer.jpg?raw=true)
+
+
+
 #### Purpose
 
 Girl Qode is a portfolio website designed to showcase my personality, hobbies, career achievements including resume and any projects that have worked on using the gain knowledge from attending Coder Academy. This website will hopefully be developed more and more overtime so that it can become an online resume when looking for potential jobs. It will showcase my HTML and CSS Web Developer skills and eventually all the other frontend and backend skills that will be gained overtime. 
@@ -34,7 +38,7 @@ Girl Qode is a portfolio website designed to showcase my personality, hobbies, c
 
 #### Sitemap
 
-
+![](https://github.com/rrachleanne/Website-Portfolio/blob/master/docs/Site%20map.jpg?raw=true)
 
 #### Screenshots
 
