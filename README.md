@@ -8,7 +8,7 @@ Github Rep - https://github.com/rrachleanne/Website-Portfolio
 
 Wireframes - [https://github.com/rrachleanne/Website-Portfolio/blob/master/docs/Website%20Project.%20Wire%20Frames%20for%20ipad%2C%20iPhone%20and%20Desktop.bmpr](https://github.com/rrachleanne/Website-Portfolio/blob/master/docs/Website Project. Wire Frames for ipad%2C iPhone and Desktop.bmpr)
 
-Powerpoint Presentation - [](https://github.com/rrachleanne/Website-Portfolio/blob/master/ppt/Website%20Portfolio%20Presentation.pdf)
+Powerpoint Presentation - [https://github.com/rrachleanne/Website-Portfolio/blob/master/ppt/Website%20Portfolio%20Presentation.pdf](https://github.com/rrachleanne/Website-Portfolio/blob/master/ppt/Website%20Portfolio%20Presentation.pdf)
 
 
 
