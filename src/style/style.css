@@ -1,7 +1,5 @@
-/* MENU code
-1. Position = fixed to move up and hide gap
-2. z-index */
-/* Menu for site> no gap = fixed  */
+/* -------Style: 1. Nav/Hamburger Menu Styling Start--------*/
+
 #menuToggle
 {
   display: block;
@@ -19,7 +17,6 @@
   color: black;
   font-family: 'Quicksand', sans-serif;
   transition: color 0.3s ease;
-  
 }
 
 #menuToggle a:hover
@@ -36,13 +33,9 @@
   position: absolute;
   top: -7px;
   left: -5px;
-  
-  
   cursor: pointer;
-  
   opacity: 0; 
   z-index: 2; 
-  
   -webkit-touch-callout: none;
 }
 
@@ -54,14 +47,10 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
   background:salmon;
   border-radius: 2px;
-  
   z-index: 1;
-  
   transform-origin: 4px 0px;
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -106,15 +95,12 @@
   margin: -100px 0 0 -50px;
   padding: 80px;
   padding-top: 125px;
-  
   background:white;
   opacity: 0.8;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -131,6 +117,8 @@
   transform: none;
 }
 
+/* -------Style: 1. Nav/Hamburger Menu Styling END--------*/
+
 body {
     margin: 0;
     padding: 0;
@@ -138,30 +126,21 @@ body {
    
 }
 
+/* -------Style: 2. Home Page Styling START--------*/
+
 #fullscreen {
     height: 100vh;
-    /* width: 100vw; */
     border: 0px solid white;
     position: relative;
-    text-align: center;
-    
-    
+    text-align: center;   
 }
-/* All main HTML Pages > Big pictures */
+
 .homepic {
     background-image: url(/imgs/2tone.jpg);
-    /* min-height: 20px;    */
-    
     background-size: cover;
     background-position: 60% 50%;
     background-repeat: no-repeat
-    
 }
-
-
-
-
-/* All main HTML H1, H2 and H3 Headings */
 
 .maincontent h1 {
     font-size: 90px;
@@ -173,300 +152,194 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 900; 
     padding-left: 10px;
-    padding-top: 180px;
+    padding-top: 90px;
     border-bottom: 2px solid white;
     border-left: 2px solid white;
     border-bottom-left-radius: 25px;
-    
-    
 } 
 
-.maincontent h2 {
-    font-size: 6 rem;
-    color: white;
-    text-align: left;
-    margin-bottom: 0rem;
-    align-content: center;
-    font-family: 'Quicksand', sans-serif;
-    padding-left:10px;
-    padding-bottom: 160px;
-    border-top:1px solid white;
-    border-top-right-radius:25px;
-} 
-
-.maincontent h3 {
-    font-size: 15px;
-    color: black;
-    margin-bottom: 0rem;
-    align-content: center;
-    font-family: 'Quicksand', sans-serif;
-} 
-
-/* All HTML Main picture Container Sections */
 .maincontainer {
-    /* display: table; */
     position: relative;
     margin: 0 auto;
     padding: 0 20px;
-    height: 100%;
-       
+    height: 100%;    
 }
+
 .maincontent {
     background-color: none;
     display: block;
     padding-left: 10px;
     position: absolute;
     width: 100%;
-    /* z-index: 5; */
     text-align: center;
-    top: 50% ;
+    top: 40% ;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase; 
-    justify-content: center; 
- 
-}
- a:hover {
-    text-decoration: none; 
-    color: salmon;
- }
-
- a:active {
-    color: salmon;
-  }
-  
-  a:visited {
-    color: salmon;
+/* -------Style: 3. Home Page Footer Styling START--------*/
+#footerbody {
+      display: block;
+      width: 100%;
+      height:100%;
+      background: rgba(12, 12, 12, 0)
   }
 
+#footercontainer {
+      min-height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background: rgba(12, 12, 12, 0)
+  }
 
-    /* All HTMLfont-awesome styling */
-          	
-    }
-    .fa:hover {
-        opacity: 0.7;
-        color: black
-      }
-    .fa-user-secret, .fa-code, .fa-trophy-alt, .fa-typewriter, .fa-phone, .fa-envelope-square, .fa-map-pin,
-    .fa-facebook,.fa-twitter, .fa-linkedin ,.fa-instagram, .fa-github, .fa-camera,  .fa-graduation-cap, .fa-briefcase {
-        color: salmon;
-    }
-
-    .fa-file-user {
-        color: salmon;
-    }
-
-
-       
-    
-    /* 2. Home HTML Page Footer */
-    #footerbody {
-        display: block;
-        width: 100%;
-        height:100%;
-        background: rgba(12, 12, 12, 0)
-    }
-    #footercontainer {
-        min-height: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background: rgba(12, 12, 12, 0)
-    }
-    .footerbox {
-        display:flex;
-        flex-basis: 100%;
-        height: 5vh;
-        justify-content: center;
-        text-align: left;
-        align-items: center;
-         font-family: 'Quicksand', sans-serif;
-         color: white;
-       
-         
-    }
-   
-    #footer {background: rgba(12, 12, 12, 0); font-size: 10px;}
-    #social {background: rgba(12, 12, 12, 0); font-size: 25px;}
-
-/* All other page footers */
-    #allfooterbody {
-        display: block;
-        width: 100%;
-        height:100%;
-     
-       
-    }
-    #allfootercontainer {
-        min-height: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: white;
-      
-        
-    }
-    .allfooterbox {
-        display:flex;
-        flex-basis: 100%;
-        height: 5vh;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-         font-family: 'Quicksand', sans-serif;
-         background-color: white;
-         color: black;
-         
-         
-    }
-   
-    #allfooter {font-size: 10px;}
-    #allsocial { font-size: 20px; color: black;}
-
-    /* 3. About page CSS */
-
-    .aboutme {
-        width: 100%;
-        height: 100%;
-        /* margin: 0 auto; */
-       position: relative;
-      background-color: gray;
-      font-family: 'Quicksand', sans-serif;
-      padding-top: 150px;
-    }
-    .about-section {
-        padding-top: 70px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        grid-gap: 20px;
-      text-align: center;
+.footerbox {
+      display:flex;
+      flex-basis: 100%;
+      height: 5vh;
       justify-content: center;
-      align-items: center;
-      font-family: 'Quicksand', sans-serif;
-      color: whitesmoke;
-    }
-    
-    .past {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      align-items: center;
       text-align: left;
-      padding-left: 100px;
-      padding-right: 100px;
-      padding-top: 10px;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 20px;
-      color:white;
-      line-height: 1.6;
-      
-      
-      
-    }
-    .present {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
       align-items: center;
-      padding-left: 100px;
-      padding-right: 100px;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 20px;
-      color:white; 
-      line-height: 1.6;
-     
-    }
-    .future {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-      align-items: center;
-      padding-left: 100px;
-      padding-right: 100px;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 20px;
-      color:white;
-      line-height: 1.6;
-     
-    }
-    
+       font-family: 'Quicksand', sans-serif;
+       color: white;
+  }
+ 
+#footer {background: rgba(12, 12, 12, 0); font-size: 10px;}
+#social {background: rgba(12, 12, 12, 0); font-size: 25px;}
   
+/* -------Style: 3. Home Page Footer Styling END--------*/
 
-    .past h1, .present h1, .future h1{
-        font-family: 'Quicksand', sans-serif;
-        color:whitesmoke;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 30px;
-    }
-    
-    .aboutphoto {
-        width: 300px;
-        height: 200px;
-        border: 3px solid salmon;
-        background-color: white;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        
-    }
-    
-    
-    .headerabout {
-      padding-top:40px;
-      text-align: center;
-     padding-left: 10px;
-     padding-right:10px;
-        
-    }
-    
-    .headerabout h1{
-      font-size: 60px;
-      color:white;
-      font-family: 'Quicksand', sans-serif;
-       border-bottom: 2px solid  white;
-    border-left: 2px solid white;
-    border-bottom-left-radius: 25px;
-   
-      
-    }
-    
-    
-    .headerabout h4{
-      font-size: 15px;
-        font-weight: 300;
-        text-align: left;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        padding-top: 180px;
-        padding-left: 20px;
-        color: white;
-        line-height: 1.6;
-    }
-    
 
-/* 4. career page css */
-.careerme {
-    width: 100%;
-    height: 100%;
-    /* margin: 0 auto; */
-   position: relative;
+
+/* -------Style: 4. About Page Styling START--------*/
+
+
+.aboutme {
+  width: 100%;
+  height: 100%;
+  position: relative;
   background-color: gray;
   font-family: 'Quicksand', sans-serif;
   padding-top: 150px;
 }
+
+.about-section {
+  padding-top: 70px;
+  display: grid;
+  grid-gap: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+    
+.past {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color:white;
+  line-height: 1.6;
+ }
+
+.present {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color:white; 
+  line-height: 1.6;
+}
+
+.future {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color:white;
+  line-height: 1.6;
+}
+  
+.past h1, .present h1, .future h1{
+  font-family: 'Quicksand', sans-serif;
+  color:whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+    
+.aboutphoto {
+  width: 300px;
+  height: 200px;
+  border: 3px solid salmon;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+        
+.headerabout {
+  padding-top:40px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right:10px;
+ }
+    
+.headerabout h1{
+  font-size: 60px;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+  border-bottom: 2px solid  white;
+  border-left: 2px solid white;
+  border-bottom-left-radius: 25px;
+ }
+        
+.headerabout h4{
+  font-size: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  color: white;
+  line-height: 1.6;
+}
+/* -------Style: 4. About Page Styling END--------*/
+    
+
+/* -------Style: 5. Career Page Styling START--------*/
+.careerme {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: gray;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 150px;
+}
+
 .career-section {
-    padding-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 20px;
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 20px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -475,121 +348,111 @@ a {
 }
 
 .section1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: left;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 55px;
+  padding-right: 55px;
   padding-top: 10px;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:white;
   line-height: 1.6;
-  
-  
 }
+
 .section2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 55px;
+  padding-right: 55px;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:white;
   line-height: 1.6;
- 
 }
 
 .section3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 55px;
+  padding-right: 55px;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:white;
   line-height: 1.6;
- 
-}
-
-
+ }
 
 .section1 h1, .section2 h1, .section3 h1 {
-    font-family: 'Quicksand', sans-serif;
-    color:whitesmoke;
-    
-    letter-spacing: 2px;
-    font-size: 30px;
- 
+  font-family: 'Quicksand', sans-serif;
+  color:whitesmoke;  
+  letter-spacing: 2px;
+  font-size: 30px;
 }
 
 .careerphoto {
-    width: 300px;
-    height: 200px;
-    border: 3px solid salmon;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
+  width: 300px;
+  height: 200px;
+  border: 3px solid salmon;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;  
 }
 
-
 .headercareer {
-  padding-top:40px;
-  text-align: center;
-    
+ padding-top:10px;
+ text-align: center;   
 }
 
 .headercareer h1{
-    font-size: 60px;
-    color:white;
-    font-family: 'Quicksand', sans-serif;
-     border-bottom: 2px solid  white;
+  font-size: 60px;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+  border-bottom: 2px solid  white;
   border-left: 2px solid white;
   border-bottom-left-radius: 25px;
 }
 
-
 .headercareer h4{
   font-size: 15px;
-    font-weight: 300;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-top: 110px;
-    padding-left: 20px;
-    color: white;
-    line-height: 1.6;
+  font-weight: 300;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  color: white;
+  line-height: 1.6;
 }
 
-    
+/* -------Style: 5. Career Page Styling END--------*/    
    
     
-/* Portfolio section -  */
+/* -------Style: 6. Portfolio Page Styling START--------*/
 
 .portfoliome {
-    width: 100%;
-    height: 100%;
-    /* margin: 0 auto; */
-   position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
   background-color: gray;
   font-family: 'Quicksand', sans-serif;
   padding-top: 150px;
 }
+
 .portfolio-section {
-    padding-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 20px;
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 20px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -598,27 +461,24 @@ a {
 }
 
 .portfolio1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: left;
   padding-left: 100px;
   padding-right: 100px;
- 
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:white;
-  line-height: 1.6;
-  
-  
-  
+  line-height: 1.6;  
 }
+
 .portfolio2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   align-items: center;
   padding-left: 100px;
   padding-right: 100px;
@@ -626,13 +486,13 @@ a {
   font-size: 20px;
   color:white; 
   line-height: 1.6;
- 
 }
+
 .portfolio3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   align-items: center;
   padding-left: 100px;
   padding-right: 100px;
@@ -640,13 +500,12 @@ a {
   font-size: 20px;
   color:white;
   line-height: 1.6;
- 
 }
 
 .portfolio4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: left;
   padding-left: 100px;
@@ -656,15 +515,13 @@ a {
   font-size: 20px;
   color:white;
   line-height: 1.6;
-  
-  
-  
 }
+
 .portfolio5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -672,50 +529,45 @@ a {
   font-size: 20px;
   color:white; 
   line-height: 1.6;
- 
 }
+
 .portfolio6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   align-items: center;
   padding-left: 100px;
   padding-right: 100px;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:white;
-  line-height: 1.6;
- 
+  line-height: 1.6; 
 }
 
-
-
 .portfolio1 h1, .portfolio2 h1, .portfolio3 h1, .portfolio4 h1, .portfolio5 h1, .portfolio6 h1{
-    font-family: 'Quicksand', sans-serif;
-    color:whitesmoke;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 30px;
-    text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  color:whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .portfoliophoto {
-    width: 300px;
-    height: 200px;
-    border: 3px solid salmon;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
+  width: 300px;
+  height: 200px;
+  border: 3px solid salmon;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex; 
 }
 
 
 .headerportfolio {
   padding-top:40px;
-  text-align: center;
-    
+  text-align: center;   
 }
 
 .headerportfolio h1{
@@ -725,41 +577,39 @@ a {
   border-bottom: 2px solid  white;
   border-left: 2px solid white;
   border-bottom-left-radius: 25px;
-
 }
 
 
 .headerportfolio h4{
-    font-size: 15px;
-    font-weight: 300;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-top: 230px;
-    padding-left: 20px;
-    color: white;
-    line-height: 1.6;
+  font-size: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  padding-left: 20px;
+  color: white;
+  line-height: 1.6;
 }
 
+/* -------Style: 6. Portfolio Page Styling END--------*/
 
-
-/* Blog page */
-
+/* -------Style: 7. Blog Page Styling START--------*/
 
 .blogme {
-    width: 100%;
-    height: 100%;
-    /* margin: 0 auto; */
-   position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
   background-color: gray;
   font-family: 'Quicksand', sans-serif;
   padding-top: 150px;
 }
+
 .blog-section {
-    padding-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 20px;
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 20px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -768,137 +618,127 @@ a {
 }
 
 .blog1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: left;
-  padding-left: 100px;
-  padding-right: 100px;
- 
+  padding-left: 65px;
+  padding-right: 65px;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:white;
   line-height: 1.6;
-  
-  
-  
 }
+
 .blog2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 65px;
+  padding-right: 65px;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:white; 
-  line-height: 1.6;
- 
+  line-height: 1.6; 
 }
+
 .blog3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 65px;
+  padding-right: 65px;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:white;
   line-height: 1.6;
- 
 }
 
 .blog4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: left;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 65px;
+  padding-right: 65px;
   padding-top: 10px;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:white;
   line-height: 1.6;
-  
-  
-  
-}
-.blog5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  align-items: center;
-  text-align: left;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 10px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  color:white;
-  line-height: 1.6;
- 
-}
-.blog6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-  align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  color:white;
-  line-height: 1.6;
- 
 }
 
+.blog5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color:white;
+  line-height: 1.6;
+}
+
+.blog6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color:white;
+  line-height: 1.6; 
+}
 
 
 .blog1 h1, .blog2 h1, .blog3 h1, .blog4 h1, .blog5 h1, .blog6 h1{
-    font-family: 'Quicksand', sans-serif;
-    color:whitesmoke;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 5px;
+  font-family: 'Quicksand', sans-serif;
+  color:whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 .blog1 h5, .blog2 h5, .blog3 h5, .blog4 h5, .blog5 h5, .blog6 h5{
-    font-family: 'Quicksand', sans-serif;
-    color:salmon;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 15px;
-    text-align: center;
-    padding-bottom: 1px;
-    padding-top: 1px;
+  font-family: 'Quicksand', sans-serif;
+  color:salmon;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 1px;
+  padding-top: 1px;
 }
 
 .blogphoto {
-    width: 300px;
-    height: 200px;
-    border: 3px solid salmon;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
+  width: 300px;
+  height: 200px;
+  border: 3px solid salmon;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 
 .headerblog {
   padding-top:40px;
-  text-align: center;
-    
+  text-align: center;  
 }
 
 .headerblog h1{
@@ -907,156 +747,221 @@ a {
   font-family: 'Quicksand', sans-serif;
   border-bottom: 2px solid  white;
   border-left: 2px solid white;
-  border-bottom-left-radius: 25px;
-
+  border-bottom-left-radius: 25px
 }
 
 
 .headerblog h4{
-    font-size: 15px;
-    font-weight: 300;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-top: 230px;
-    padding-left: 20px;
-    color: white;
-    line-height: 1.6;
+  font-size: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  color: white;
+  line-height: 1.6;
 }
+
+/* -------Style: 7. Blog Page Styling END--------*/
+
+/* -------Style: 8. All Pages *LINKS* Styling START--------*/
+a {
+  color: salmon;
+  text-decoration: none;
+  text-transform: uppercase; 
+  justify-content: center; 
+
+}
+a:hover {
+  text-decoration: underline; 
+  color: salmon;
+}
+
+a:active {
+  color: salmon;
+}
+
+a:visited {
+  color: salmon;
+}
+
+/* -------Style: 8. All Pages *LINKS* Styling END--------*/
+
+
+
+
+/* -------Style: 9. All Pages *ICON* Styling START--------*/
+          
+  }
+.fa:hover {
+  opacity: 0.7;
+  color: black
+}
+.fa-user-secret, .fa-code, .fa-trophy-alt, .fa-typewriter, .fa-phone, .fa-envelope-square, .fa-map-pin,
+.fa-facebook,.fa-twitter, .fa-linkedin ,.fa-instagram, .fa-github, .fa-camera,  .fa-graduation-cap, .fa-briefcase {
+  color: salmon;
+}
+
+.fa-file-user {
+  color: salmon;
+}
+
+/* -------Style: 9. All Pages *ICON* Styling END--------*/
+    
+ 
+
+/* -------Style: 10. About, Career, Portfolio and Blog Page Footer Styling START--------*/
+ #allfooterbody {
+  display: block;
+  width: 100%;
+  height:100%;    
+  }
+
+#allfootercontainer {
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;   
+  }
+
+.allfooterbox {
+  display:flex;
+  flex-basis: 100%;
+  height: 5vh;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  background-color: gray;
+  color: black;      
+}
+ 
+#allfooter {font-size: 10px;}
+#allsocial { font-size: 20px;}
+
+/* -------Style: 10. About, Career, Portfolio and Blog Page Footer Styling END--------*/
+
+
 
     @media only screen and (min-width: 600px) {
         /* For tablets: */
         
     
-        /* About section */
-  .aboutme {
-        width: 100%;
-        height: 100%;
-        /* margin: 0 auto; */
-       position: relative;
-      background-color: gray;
-      font-family: 'Quicksand', sans-serif;
-      padding-top: 150px;
-    }
-    .about-section {
-        padding-top: 70px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        grid-gap: 20px;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Quicksand', sans-serif;
-      color: whitesmoke;
-    }
-    
-    .past {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      align-items: center;
-      text-align: left;
-      padding-left: 100px;
-      padding-right: 100px;
-      padding-top: 10px;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 20px;
-      color:white;
-      line-height: 1.6;
-      
-      
-      
-    }
-    .present {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-      align-items: center;
-      padding-left: 100px;
-      padding-right: 100px;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 20px;
-      color:white; 
-      line-height: 1.6;
-     
-    }
-    .future {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-      align-items: center;
-      padding-left: 100px;
-      padding-right: 100px;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 20px;
-      color:white;
-      line-height: 1.6;
-     
-    }
-    
-  
+/* -------Style: 4. About Page [IPAD] Styling START--------*/
+.aboutme {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: gray;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 150px;
+}
 
-    .past h1, .present h1, .future h1{
-        font-family: 'Quicksand', sans-serif;
-        color:whitesmoke;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 30px;
-    }
-    
-    .aboutphoto {
-        width: 300px;
-        height: 200px;
-        border: 3px solid salmon;
-        background-color: white;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        
-    }
-    
-    
-    .headerabout {
-      padding-top:40px;
-      text-align: center;
-     padding-left: 10px;
-     padding-right:10px;
-        
-    }
-    
-    .headerabout h1{
-      font-size: 60px;
-      color:white;
-      font-family: 'Quicksand', sans-serif;
-       border-bottom: 2px solid  white;
-    border-left: 2px solid white;
-    border-bottom-left-radius: 25px;
+.about-section {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  color: whitesmoke;
+ }
    
-      
-    }
+ .past {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  color:white;
+  line-height: 1.6;     
+}
+
+.present {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  color:white; 
+  line-height: 1.6;  
+}
     
+.future {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  color:white;
+  line-height: 1.6;  
+}
     
-    .headerabout h4{
-      font-size: 15px;
-        font-weight: 300;
-        text-align: left;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        padding-top: 180px;
-        padding-left: 20px;
-        color: white;
-        line-height: 1.6;
-    }
-  
+
+.past h1, .present h1, .future h1{
+  font-family: 'Quicksand', sans-serif;
+  color:whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
     
+.aboutphoto {
+  width: 300px;
+  height: 200px;
+  border: 3px solid salmon;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;    
+}
+ 
     
+.headerabout {
+  padding-top:10px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right:10px;     
+}
     
+.headerabout h1{
+  font-size: 60px;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+  border-bottom: 2px solid  white;
+  border-left: 2px solid white;
+  border-bottom-left-radius: 25px;
+}   
     
-    
-    
-    
+.headerabout h4{
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 180px;
+  padding-left: 20px;
+  color: white;
+  line-height: 1.6;
+}
+ /* -------Style: 4. About Page [IPAD] Styling END--------*/
     }
 
   @media only screen and (min-width: 768px) {
@@ -1075,79 +980,72 @@ a {
     .col-12 {width: 100%;}
     
 
-    /* home Page */
+/* -------Style: 2. Home Page [DESKTOP] Styling START--------*/
 
-    #fullscreen {
-        height: 100vh;
-        /* width: 100vw; */
-        border: 0px solid white;
-        position: relative;
-        text-align: center;
-    }
+#fullscreen {
+  height: 100vh;
+  border: 0px solid white;
+  position: relative;
+  text-align: center;
+}
 
-    .maincontent h1 {
-        font-size: 200px;
-        font-weight: bold;
-        color: white;
-        text-align: left;
-        margin-bottom: 0rem;
-        align-content: left;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 900; 
-        padding-top: 1px;
-        padding-left: 10px;
-        border-bottom: 2px solid white;
-        border-left: 2px solid white;
-        border-bottom-left-radius: 25px;
-        
-    } 
+.maincontent h1 {
+  font-size: 200px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  margin-bottom: 0rem;
+  align-content: left;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 900; 
+  padding-top: 1px;
+  padding-left: 10px;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom-left-radius: 25px;       
+} 
     
-    .maincontent h2 {
-        font-size: 6 rem;
-        color: white;
-        text-align: left;
-        margin-bottom: 0rem;
-        align-content: center;
-        font-family: 'Quicksand', sans-serif;
-        padding-left:10px;
-        padding-bottom: 20px;
-        border-top:1px solid white;
-        border-right: 1px solid white;
-        border-top-right-radius:25px;
-    } 
+.maincontent {
+  background-color: none;
+  display: block;
+  padding-left: 10px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50% ;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
   
+.footerbox {
+  display:flex;
+  flex-basis: 100%;
+  height: 5vh;
+  justify-content: left;
+  text-align: left;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  color: white;      
+}
 
-      
-    .footerbox {
-        display:flex;
-        flex-basis: 100%;
-        height: 5vh;
-        justify-content: left;
-        text-align: left;
-        align-items: center;
-         font-family: 'Quicksand', sans-serif;
-         color: white;
-       
-         
-    }
+/* -------Style: 2. Home Page [DESKTOP] Styling END--------*/
 
-/* About section */
 
+/* -------Style: 4. About Page [DESKTOP] Styling START--------*/
 .aboutme {
-   
   padding-top: 20px
 }
+
 .about-section {
-    padding-top: 10px;
- 
+  padding-top: 10px;
 }
 
 .past {
-   padding-left: 100px;
+  padding-left: 100px;
   padding-right: 10px;
-  font-size: 16px;
-   
+  font-size: 16px; 
 }
+
 .present {
   padding-left: 30px;
   padding-right: 10px;
@@ -1164,48 +1062,42 @@ a {
   font-size: 16px;
 }
 
-
 .headerabout {
   padding-top:10px;
   text-align: center;
   padding-left:350px;
   padding-right:350px;
- 
 }
-
-
 
 .headerabout h4{
-     padding-top: 10px;
+     padding-top: 0px;
     padding-left: 460px;
-    
+    padding-bottom: 0px;
 }
 
+/* -------Style: 4. About Page [DESKTOP] Styling END--------*/
 
-/* Career page */
+/* -------Style: 5. Career Page [DESKTOP] Styling START--------*/
+
 .careerme {
-  
   padding-top: 10px;
 }
+
 .career-section {
     padding-top: 10px;
-  
 }
 
 .section1 {
     padding-left: 100px;
     padding-right: 10px;
     font-size: 16px;
-  
-  
 }
+
 .section2 {
     padding-left: 30px;
     padding-right: 10px;
-   
     padding-top: 50;
     font-size: 16px;
- 
 }
 
 .section3 {
@@ -1214,178 +1106,160 @@ a {
     padding-bottom: 15px;
     padding-top: 0;
     font-size: 16px;
- 
 }
-
-
-
 
 .headercareer {
     padding-top:10px;
     text-align: center;
     padding-left:350px;
     padding-right:350px;
-   
-    
 }
 
 .headercareer h1{
   font-size: 60px;
   color:white;
   font-family: 'Quicksand', sans-serif;
-
 }
-
 
 .headercareer h4{
     padding-top: 10px;
     padding-left: 460px;
 }
 
-/* Portfolio page  */
+/* -------Style: 5. Career Page [DESKTOP] Styling END--------*/
+
+/* -------Style: 6. Portfoilio Page [DESKTOP] Styling START--------*/
 
 .portfoliome {
-   
     padding-top: 20px
-  }
+}
+
   .portfolio-section {
-      padding-top: 10px;
-   
-  }
+  padding-top: 10px;
+}
   
-  .portfolio1 {
-     padding-left: 100px;
-    padding-right: 10px;
-    font-size: 18px;
-     
-  }
-  .portfolio2 {
-    padding-left: 30px;
-    padding-right: 10px;
-    padding-bottom: 55px;
-    padding-top: 55px;
-    font-size: 18px;
-    
-  }
+.portfolio1 {
+  padding-left: 100px;
+  padding-right: 10px;
+  font-size: 18px;  
+}
+
+.portfolio2 {
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-bottom: 55px;
+  padding-top: 55px;
+  font-size: 18px;    
+}
+
   .portfolio3 {
-    padding-left: 30px;
-    padding-right: 100px;
-    padding-bottom: px;
-    padding-top: 5;
-    font-size: 18px;
-  }
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-bottom: px;
+  padding-top: 5;
+  font-size: 18px;
+}
 
-  .portfolio4 {
-    padding-left: 100px;
-    padding-right: 10px;
-    font-size: 18px;
-  }
+.portfolio4 {
+  padding-left: 100px;
+  padding-right: 10px;
+  font-size: 18px;
+}
   
-  .portfolio5 {
-    padding-left: 30px;
-    padding-right: 10px;
-    padding-bottom: 55px;
-    padding-top: 55px;
-    font-size: 18px;
-  }
+.portfolio5 {
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-bottom: 55px;
+  padding-top: 55px;
+  font-size: 18px;
+}
 
-  .portfolio6 {
-    padding-left: 30px;
-    padding-right: 100px;
-    padding-bottom: px;
-    padding-top: 5;
-    font-size: 18px;
-  }
+.portfolio6 {
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-bottom: px;
+  padding-top: 5;
+  font-size: 18px;
+}
   
-  .headerportfolio {
-    padding-top:10px;
-    text-align: center;
-    padding-left:350px;
-    padding-right:350px;
-   
-  }
+.headerportfolio {
+  padding-top:10px;
+  text-align: center;
+  padding-left:350px;
+  padding-right:350px;
+} 
   
-  
-  
-  .headerportfolio h4{
-    padding-top: 10px;
-    padding-left: 460px;
-      
-  } 
+.headerportfolio h4{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 460px;     
+} 
 
-/* Blog page  */
+/* -------Style: 6. Portfoilio Page [DESKTOP] Styling END--------*/
 
+/* -------Style: 7. Blog Page [DESKTOP] Styling START--------*/
 .blogme {
-   
-    padding-top: 20px
-  }
-  .blog-section {
-      padding-top: 10px;
-   
-  }
+  padding-top: 20px
+}
+.blog-section {
+  padding-top: 10px; 
+}
   
-  .blog1 {
-     padding-left: 100px;
-    padding-right: 10px;
-    font-size: 18px;
-     
-  }
-  .blog2 {
-    padding-left: 30px;
-    padding-right: 10px;
-    padding-bottom: 55px;
-    padding-top: 55px;
-    font-size: 18px;
-    
-  }
-  .blog3 {
-    padding-left: 30px;
-    padding-right: 100px;
-    padding-bottom: px;
-    padding-top: 50;
-    font-size: 18px;
-  }
+.blog1 {
+  padding-left: 100px;
+  padding-right: 10px;
+  font-size: 18px;   
+ }
+.blog2 {
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-bottom: 55px;
+  padding-top: 55px;
+  font-size: 18px;
+}
 
-  .blog4 {
-    padding-left: 100px;
-    padding-right: 10px;
-    font-size: 18px;
-  }
-  
-  .blog5 {
-    padding-left: 30px;
-    padding-right: 10px;
-    padding-bottom: 55px;
-    
-    font-size: 18px;
-  }
+.blog3 {
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-bottom: px;
+  padding-top: 50;
+  font-size: 18px;
+}
 
-  .blog6 {
-    padding-left: 30px;
-    padding-right: 100px;
-    padding-bottom: 40px;
-    padding-top: ;
-    font-size: 18px;
-  }
+.blog4 {
+  padding-left: 100px;
+  padding-right: 10px;
+  font-size: 18px;
+}
   
-  .headerblog {
-    padding-top:10px;
-    text-align: center;
-    padding-left:350px;
-    padding-right:350px;
-   
-  }
-  
-  
-  
-  .headerblog h4{
-    padding-top: 10px;
-    padding-left: 460px;
-      
-  } 
+.blog5 {
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-bottom: 55px;  
+  font-size: 18px;
+}
 
+.blog6 {
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+  padding-top: ;
+  font-size: 18px;
+}
+  
+.headerblog {
+  padding-top:10px;
+  text-align: center;
+  padding-left:350px;
+  padding-right:350px;
+}  
+  
+.headerblog h4{
+  padding-top: 10px;
+  padding-left: 460px;      
+} 
 
-    }
+}
 
      
    
